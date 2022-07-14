@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ChandruModelStoreContainer" CdmEntityContainer="ChandruEntities">
+    <EntitySetMapping Name="Emp_Inf">
+      <EntityTypeMapping TypeName="ChandruModel.Emp_Inf">
+        <MappingFragment StoreEntitySet="Emp_Inf">
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="Emp_name" ColumnName="Emp_name" />
+          <ScalarProperty Name="Emp_password" ColumnName="Emp_password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

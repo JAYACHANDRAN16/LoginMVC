@@ -1,0 +1,91 @@
+﻿body {
+    background-image: url('https://mytravelframes.com/wp-content/uploads/2020/05/IMG_4248.jpg');
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    color: white;
+    font-weight: bolder;
+}
+
+.jd {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: greenyellow;
+    font-weight: bolder;
+}
+
+#form-horizontal {
+    max-width: 100px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    margin-top: 100px;
+}
+
+.form-group {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0,0.20);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted white;
+    color: white;
+    border-radius: 50px;
+    margin: 5px;
+    font-weight: bold;
+    font-variant-position: initial;
+    text-align: right;
+    align-content:center;
+    font-size: large;
+    
+}
+
+.forms {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0,0.20);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px dotted white;
+    font-size: large;
+}
+
+.oneline {
+    align-content: center;
+    background: rgba(0,0,0,0.45);
+    align-items: center;
+}
+
+#submit {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    border-radius: 5px;
+    opacity: 2;
+    font-size: 20px;
+    color: white;
+    background: #0000CD;
+    align-content: flex-start;
+}
+
+

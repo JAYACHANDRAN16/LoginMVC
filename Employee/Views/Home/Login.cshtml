@@ -1,0 +1,77 @@
+﻿@model Employee.Models.Emp_Inf
+
+@{
+    ViewBag.Title = "Login";
+}
+<head>
+   
+    <link href="@Url.Content("~/CSS Style/Login.css")" rel="stylesheet" type="text/css"/>
+
+    
+</head>
+<body>
+    <center>
+
+        <div class="oneline">
+
+            <h2>Login</h2>
+
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4 class="jd">Fill this form to login</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    
+
+                        <div class="form-group">
+
+                            <div class="jaya">  @Html.LabelFor(model => model.Emp_name, htmlAttributes: new { @class = "control-label col-md-2" }) </div>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Emp_name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Emp_name, "", new { @class = "text-danger" })
+                            </div>
+
+                        </div>
+
+                        <div class="forms">
+                            @Html.LabelFor(model => model.Emp_password, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Emp_password, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Emp_password, "", new { @class = "text-danger" })
+                            </div>
+                            <hr />
+                        </div>
+
+                        <div>
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Login" class="btn btn-default" id="submit" />
+                            </div>
+                        </div>
+
+
+
+                        <div class="Jay">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label>@ViewBag.Notification</label>
+                            </div>
+                        </div>
+                    </div>
+                    }
+
+                    <div>
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+
+                    @section Scripts {
+                        @Scripts.Render("~/bundles/jqueryval")
+                    }
+                </div>
+
+             
+        </center>
+</body>

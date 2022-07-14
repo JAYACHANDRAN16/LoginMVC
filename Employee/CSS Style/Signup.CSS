@@ -1,0 +1,65 @@
+﻿body {
+    background-image: url('https://www.theindianexpert.com/wp-content/uploads/2019/02/Pondicherry-Tourist-Places.jpg');
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    image-resolution: snap;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    color: black;
+    font-weight: bolder;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.form-horizontal {
+    max-width: 500px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0,0,0,0.60);
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    margin-top: 35px;
+}
+
+.name {
+    color: white;
+    font-size: large
+}
+
+.password {
+    color: white;
+    font-size: large;
+}
+
+.repassword {
+    color: white;
+    font-size: large;
+    text-emphasis-position: initial;
+}
+
+#create {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+    border-radius: 5px;
+    opacity: 2;
+    font-size: 20px;
+    color: white;
+    background: #0000CD;
+    align-content: flex-start;
+}

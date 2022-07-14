@@ -1,0 +1,35 @@
+﻿body {
+    background-image: url('https://vibrant.holiday/uploads/guide/images/15562869303.jpg');
+    background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    opacity: 2;
+    font-weight: bolder;
+}
+
+.cnew {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    opacity: 50;
+    font-weight: bolder;
+}
+
+.table {
+    max-width: 850px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0,0,0,0.75);
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    margin-top: 30px;
+    font-size: large;
+}

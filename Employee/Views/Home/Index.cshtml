@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Employee.Models.Emp_Inf>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <link href="@Url.Content("~/CSS Style/Index.CSS")" rel="stylesheet" type="text/css" />
+</head>
+
+<h2>Index</h2>
+
+<p class="cnew">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_Repassword)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_Repassword)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
